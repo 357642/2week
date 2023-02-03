@@ -1,0 +1,96 @@
+header{}
+header .box1{
+    position: relative;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    background: #ccc;
+}
+header h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+header h1 a{
+    display: block;
+    width: 100px;
+    height: 50px;
+    background: #f00;
+}
+.gnb{
+    text-align: center;
+    background: #888;
+}
+.gnb ul{
+    display: grid;
+    grid-template-columns: repeat(4, 90px);
+    justify-content: center;
+    line-height: 50px;
+}
+.gnb li{
+    background: #f00;
+}
+.gnb a{}
+main{
+    width: 800px;
+    margin: 10px auto;
+    display: grid;
+    gap: 10px;
+}
+.box2{
+    padding: 10px;
+    background: #ccc;
+}
+.box2 .top{
+    height: 100px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+.box2 .bottom{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto 150px;
+    gap: 10px;
+    background: #fff;
+}
+.box2 .left{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    background: #00f;
+}
+.box2 .left li{
+    background: #f00;
+}
+.box2 .right{
+   background: #f00;
+}
+.box3{
+    padding: 10px;
+    background: #ccc;
+}
+.box3 ul{
+    display: grid;
+    gap: 10px;
+}
+.box3 li{}
+.box3 a{
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 150px; 
+    /* a에 img대신 높이주면 레이아웃 깨짐(img가 원본 비율이 됨). 왜?? */
+    gap: 10px;
+}
+.box3 img{
+    height: 150px;
+}
+.box3 p{
+    background: #fff;
+}
+footer{
+    height: 100px;
+    background: #ccc;
+}

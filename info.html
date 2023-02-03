@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        ul{
+            list-style: none;
+        }
+    </style>
+    <h1>자식요소에 쓰는 수치</h1>
+    <h1>플렉스는 기본 디폴트값이 flex-shrink:1이다.</h1>
+
+
+    <style>
+        .list1{
+            display: flex;
+        }
+        .list1 li{
+            width: 300px;
+            height: 100px;
+            background: #f00;
+            margin: 10px;
+            flex-grow: 1;
+        }
+        .list1 li:last-child{
+            flex-grow: 0;
+        }
+    </style>
+    <h1>flex-grow</h1>
+    <p>자라나다 증가의 비율</p>
+    <ul class="list1">
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
+
+
+    <style>
+        .list2{
+            display: flex;
+        }
+        .list2 li{
+            width: 300px;
+            height: 100px;
+            background: #f00;
+            margin: 10px;
+            flex-shrink: 0;
+        }
+        .list2 li:last-child{
+            flex-shrink: 1;
+        }
+    </style>
+    <h1>flex-shrink</h1>
+    <p>수축하다 수축의 비율</p>
+    <ul class="list2">
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
+
+
+    <style>
+        .list3{
+            display: flex;
+            /* flex-direction: column; */
+        }
+        .list3 li{
+            height: 50px;
+            background: #00f;
+            margin: 10px;
+            flex-basis: 300px;
+        }
+    </style>
+    <h1>flex-basis</h1>
+    <p>중심축 기준값</p>
+    <ul class="list3">
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
+
+
+    <style>
+        .list4{
+            display: flex;
+        }
+        .list4 li{
+            flex: 1 1 100%;
+            /* flex: 1; */
+            /* 가장 많이 쓰는 속성값 */
+            height: 100px;
+            background: #f00;
+            margin: 10px;
+        }
+    </style>
+    <h1>flex-grow shrink basis</h1>
+    <p>flex:1 ->> flex: 1 1 100%</p>
+    <ul class="list4">
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+    </ul>
+</body>
+</html>

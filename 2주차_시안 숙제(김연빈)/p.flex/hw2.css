@@ -1,0 +1,59 @@
+body{
+    background: #ccc;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: #f00;
+}
+main{
+    margin: 10px 10px 10px 160px;
+    display: grid;
+    gap: 10px;
+}
+.box1,
+.box3,
+.box4,
+.box7{
+    height: 200px;
+    background: #fff;
+}
+.box2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100px;
+    gap: 10px;
+}
+.box2 div{
+    background: #888;
+}
+.box2 div:last-child{
+
+}
+.box5{
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    height: 100px;
+    gap: 10px;
+}
+.box5 div{
+    background: #888;
+}
+.box5 div:last-child{
+
+}
+.box6{
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    height: 100px;
+    gap: 10px;
+}
+.box6 div{
+    background: #888;
+}
+.box6 div:last-child{
+
+}

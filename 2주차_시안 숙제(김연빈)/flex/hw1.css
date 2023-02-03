@@ -1,0 +1,49 @@
+body{
+    background: #ccc;
+}
+header{
+    height: 100px;
+    background: #000;
+}
+main{
+    width: 800px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box1{
+    height: 200px;
+    background: #fff;
+}
+.box2{
+    display: flex;
+    gap: 10px;
+}
+.box2 div{
+    height: 100px;
+    flex: 1;
+    background: #fff;
+}
+.box3{
+    display: flex;
+}
+.box3 > *{
+    height: 100px;
+    flex: 1;
+    background: #fff;
+}
+.box3 > *+*{
+    margin-left: 10px;
+}
+.box4{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background: #f00;
+}
+.box4 div{
+    width: calc(50% - 5px);
+    height: 100px;
+    background: #fff;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<body>
+    <style>
+        header{
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            height: 200px;
+            background: #ccc;
+        }
+        header h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        header .sns{}
+        header .login{}
+        header .page{
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        header .page span{
+            width: 50px;
+            height: 50px;
+            background: #fff;
+        }
+    </style>
+    <header>
+        <h1>logo</h1>
+        <div class="sns">sns</div>
+        <div class="login">login</div>
+
+        <div class="page">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+        </div>
+    </header>
+
+
+    <style>
+        .box1{
+            padding: 100px 0;
+        }
+        .box1 ul{
+            margin: 0 auto;
+            width: 800px;
+            display: flex;
+            gap: 10px;
+        }
+        .box1 ul li{
+            flex: 1;
+        }
+        .box1 ul a{
+            display: block;
+            padding: 10px;
+            background: #ccc;
+        }
+        .box1 ul img{}
+        .box1 ul p{}
+    </style>
+    <div class="box1">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="./img1.jpg" alt="">
+                    <p>Lorem, ipsum dolor.</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img2.jpg" alt="">
+                    <p>Lorem, ipsum dolor.</p>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="./img3.jpg" alt="">
+                    <p>Lorem, ipsum dolor.</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+
+    <style>
+        .box3{
+            padding: 100px 0;
+            background: #ccc;
+        }
+        .box3 ul{
+            width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .box3 ul li{
+            height: 100px;
+            background: #fff;
+        }
+    </style>
+    <div class="box3">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+    </div>
+</body>
+</html>

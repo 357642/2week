@@ -1,0 +1,16 @@
+// less
+// sass
+// scss가 가장 유명하다.
+// stylelus
+
+@import './utils/var';      // 변수 용도
+@import './utils/mixin';    // 재활용 가능한 소스
+
+@import './base/typo';      // 폰트
+@import './base/reset';     // 리셋
+@import './base/common';    // 공통 소스
+
+@import './layout/header';  // 헤더
+@import './layout/footer';  // 푸터
+
+@import './page/main';      // 메인페이지

@@ -1,0 +1,57 @@
+body{
+    background: #ccc;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: #f00;
+}
+main{
+    margin: 10px 10px 10px 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box1,
+.box3,
+.box4,
+.box7{
+    height: 200px;
+    background: #fff;
+}
+.box2{
+    display: flex;
+    gap: 10px;
+}
+.box2 div{
+    flex: 1;
+    height: 100px;
+    background: #888;
+}
+.box5{
+    display: flex;
+    gap: 10px;
+}
+.box5 div{
+    width: 80%;
+    height: 100px;
+    background: #888;
+}
+.box5 div:last-child{
+    width: 20%;
+}
+.box6{
+    display: flex;
+    gap: 10px;
+}
+.box6 div{
+    flex: 3;
+    height: 100px;
+    background: #888;
+}
+.box6 div:last-child{
+    flex: 7;
+}

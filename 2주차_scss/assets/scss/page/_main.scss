@@ -1,0 +1,121 @@
+.box1{
+    position: relative;
+    height: 300px;
+    background: #999;
+    .btn{
+        @include position-vt;
+        @include mobile {
+            display: none;
+        }
+
+        width: 50px;
+        height: 50px;
+        background: #f00;
+        &.prev{
+            left: 10px;
+        }
+        &.next{
+            right: 10px;
+        }
+    }
+    .pagination{
+        @include position-hr;
+
+        bottom: 10px;
+        display: flex;
+        gap: 10px;
+        .bullet{
+            @include mobile{
+                width: 10px;
+                height: 10px;
+            }
+
+            width: 50px;
+            height: 50px;
+            background: #fff;
+            &-active{
+                background: #0f0;
+            }
+        }
+    }
+}
+.box2{
+    padding: 10px;
+    background: #ccc;
+    margin: 10px 0;
+    .top{
+        height: 100px;
+        margin-bottom: 10px;
+        background: #fff;
+    }
+    .bottom{
+        @include tablet{
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        padding: 10px;
+        background: #fff;
+        display: flex;
+    }
+    .left{
+        @include tablet{
+            margin-right: 0;
+        }
+        @include mobile{
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        flex: 1;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        li{
+            height: 100px;
+            background: #f00;
+        }
+    }
+    .right{
+        @include tablet{
+            height: 300px;
+            width: 100%;    
+        }
+
+        width: 200px;
+        background: #f00;
+    }
+}
+.box3{
+    ul{
+        margin-right: -10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    li{
+        @include tablet{
+            width: 33.33%;
+        }
+        @include mobile{
+            width: 100%;
+        }
+
+        width: 25%;
+        margin-bottom: 10px;
+        a{
+            margin-right: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #f00;
+        }
+        img{}
+        strong{
+           @include ellipsis;
+        }
+        p{
+           @include ellipsis(3);
+        }
+    }
+}

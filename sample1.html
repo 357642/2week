@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<body>
+    <style>
+        main{
+            width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+    <main>
+        <!-- gap *가장 좋은 방법!* -->
+        <style>
+            .box1{
+                display: flex;
+                gap: 10px;
+            }
+            .box1 div{
+                flex: 1;
+                height: 100px;
+                background: #f00;
+            }
+        </style>
+        <div class="box1">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        
+        <!-- 올빼미 선택자 -->
+        <style>
+            .box2{
+                display: flex;
+            }
+            .box2 > *{
+                flex: 1;
+                height: 100px;
+                background: #00f;
+            }
+            .box2 > *+*{
+                margin-left: 10px;
+            }
+        </style>
+        <div class="box2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+
+
+        <!-- 스페이스 비트윈 -->
+        <style>
+            .box3{
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                background: #ccc;
+            }
+            .box3 div{
+                width: calc(50% - 5px);
+                height: 100px;
+                background: #f00;
+            }
+        </style>
+        <div class="box3">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </main>
+</body>
+</html>

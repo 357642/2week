@@ -1,0 +1,19 @@
+header{
+    position: relative;
+    height: 200px;
+    background: #ccc;
+    display: flex;
+    justify-content: space-between;
+    h1{
+        @include position-center;
+
+        a{
+            display: block;
+            width: 100px;
+            height: 50px;
+            background: #f00;
+        }
+    }
+    .sns{}
+    .login{}
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<body>
+    <style>
+        .box4{
+            display: flex;
+            gap: 10px;
+        }
+        .box4 div{
+            width: 80%;
+            height: 100px;
+            background: #f00;
+        }
+        .box4 div:last-child{
+            width: 20%;
+        }
+    </style>
+    <div class="box4">
+        <div>80%</div>
+        <div>20%</div>
+    </div>
+
+
+    <style>
+        .box5{
+            display: flex;
+            gap: 10px;
+        }
+        .box5 div{
+            flex: 3;
+            height: 100px;
+            background: #f00;
+        }
+        .box5 div:last-child{
+            flex: 7;
+        }
+    </style>
+    <div class="box5">
+        <div>30%</div>
+        <div>70%</div>
+    </div>  
+</body>
+</html>

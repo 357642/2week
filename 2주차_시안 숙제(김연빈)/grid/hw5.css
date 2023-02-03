@@ -1,0 +1,124 @@
+.inner{
+    width: 800px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    background: #000;
+}
+main{}
+.box1{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 200px;
+    gap: 10px;
+}
+.box1 div{
+    background: #ccc;
+}
+.box1 div:last-child{
+    position: relative;
+}
+.box1 .btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background: #fff;
+}
+.box1 .btn.prev{
+    left: 10px;
+}
+.box1 .btn.next{
+    right: 10px;
+}
+.box2{
+    height: 100px;
+    background: #000;
+}
+.box3{
+    margin: 10px 0;
+    padding: 10px;
+    background: #ccc;
+}
+.box3 ul{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 10px;
+    background: #fff;
+}
+.box3 li{
+    background: #f00;
+}
+.box3 li:nth-child(1){
+    grid-column: span 7;
+}
+.box3 li:nth-child(2){
+    grid-column: span 3;
+}
+.box3 li:nth-child(3){
+    grid-column: span 2;
+}
+.box3 li:nth-child(4){
+    grid-column: span 8;
+}
+.box4{
+    margin-bottom: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    justify-content: space-between;
+    background: #ccc;
+}
+.box4 h2{
+    line-height: 50px;
+}
+.box4 .wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 50px);
+}
+.box4 .wrap a{
+    height: 50px;
+    border: 1px solid #000;
+    background: #fff;
+}
+.box4 .wrap .prev{
+    margin-right: -1px;
+}
+.box4 .wrap .next{}
+.box5{
+    margin-bottom: 10px;
+}
+.box5 ul{
+    /* margin-right: -10px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.box5 li{
+    /* margin-bottom: 10px; */
+}
+.box5 a{
+    /* margin-right: 10px; */
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    background: #ccc;
+}
+.box5 img{}
+.box5 strong{
+    padding: 10px;
+    background: #fff;
+}
+.box5 p{
+    padding: 10px;
+    background: #fff;
+}
+footer{
+    height: 100px;
+    background: #ccc;
+}

@@ -1,0 +1,50 @@
+body{
+    background: #ccc;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: #f00;
+}
+main{
+    margin: 10px 10px 10px 160px;
+    display: grid;
+    gap: 10px;
+}
+.box1,
+.box3,
+.box4,
+.box7{
+    height: 200px;
+    background: #fff;
+}
+.box2{
+    height: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.box2 div{
+    background: #888;
+}
+.box5{
+    height: 100px;
+    display: grid;
+    grid-template-columns: 8fr 2fr;
+    gap: 10px;
+}
+.box5 div{
+    background: #888;
+}
+.box6{
+    height: 100px;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 10px;
+}
+.box6 div{
+    background: #888;
+}

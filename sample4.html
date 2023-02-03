@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+</head>
+<body>
+    <style>
+        .gnb{}
+        .gnb ul{
+            display: flex;
+            justify-content: center;
+            background: #f00;
+        }
+        .gnb ul li{}
+        </style>
+    <div class="gnb">
+        <ul>
+            <li><a href="">menu1</a></li>
+            <li><a href="">menu2</a></li>
+            <li><a href="">menu3</a></li>
+            <li><a href="">menu4</a></li>
+        </ul>
+    </div>
+    
+    
+    <!-- flex -->
+    <main>
+        <style>
+            main{
+                width: 800px;
+                margin: 0 auto;
+            }
+            .box1{
+                margin: 10px 0;
+                padding: 10px;
+                background: #ccc;
+            }
+            .box1 .top{
+                height: 100px;
+                margin-bottom: 10px;
+                background: #fff;
+            }
+            .box1 .bottom{
+                display: flex;
+                padding: 10px;
+                background: #fff;
+                /* 
+                    align-items: stretch; (기본값)
+                    자식들은 높이를 공유. 박스를 확장해서 배치
+                */
+            }
+            .box1 .left{
+                display: flex;
+                flex: 1;
+                flex-wrap: wrap;
+                gap: 10px;
+                margin-right: 10px;
+                background: #00f;
+            }
+            .box1 .left li{
+                width: calc((100% - 20px)/3);
+                height: 100px;
+                background: #f00;
+            }
+            .box1 .right{
+                width: 150px;
+                background: #f00;
+            }
+        </style>
+        <div class="box1">
+            <div class="top">top</div>
+            <div class="bottom">
+                <ul class="left">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+                <div class="right">right</div>
+            </div>
+        </div>
+        
+        
+        <!-- grid -->
+        <style>
+            .box2{
+                margin: 10px 0;
+                padding: 10px;
+                background: #ccc;
+            }
+            .box2 .top{
+                height: 100px;
+                margin-bottom: 10px;
+                background: #fff;
+            }
+            .box2 .bottom{
+                display: flex;
+                padding: 10px;
+                background: #fff;
+                /* 
+                    align-items: stretch;
+                    자식들은 높이를 공유
+                */
+            }
+            .box2 .left{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 100px);
+                flex: 1;
+                gap: 10px 20px;
+                margin-right: 10px;
+                background: #00f;
+            }
+            .box2 .left li{
+                background: #ff0;
+            }
+            .box2 .right{
+                width: 150px;
+                background: #f00;
+            }
+        </style>
+        <div class="box2">
+            <div class="top">top</div>
+            <div class="bottom">
+                <ul class="left">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+                <div class="right">right</div>
+            </div>
+        </div>
+
+
+        <style>
+            .box3{
+                padding: 10px;
+                background: #ccc;
+            }
+            .box3 ul{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .box3 ul li{}
+            .box3 ul a{
+                display: flex;
+                gap: 10px;
+            }
+            .box3 ul img{
+                width: 150px;
+                height: 150px;
+            }
+            .box3 ul p{
+                background: #fff;
+                flex: 1;
+            }
+        </style>
+        <div class="box3">
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./img1.jpg" alt="">
+                        <p>Lorem, ipsum dolor.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img1.jpg" alt="">
+                        <p>Lorem, ipsum dolor.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img1.jpg" alt="">
+                        <p>Lorem, ipsum dolor.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img1.jpg" alt="">
+                        <p>Lorem, ipsum dolor.</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
